@@ -66,11 +66,11 @@ class App extends React.Component{
     <div className="App" >
       <Description title={title} region={region}/>
       <div className="summary">
-        <h2> Occupation Summary for {title} </h2>{" "}
+        <h2> Occupation Summary for <a class="green">{title}</a> </h2>{" "}
+      <div className="block">
+          <BlockOne title={regional_jobs} label={regional_year} description={regional_comparison}/>
         
-        <BlockOne title={regional_jobs} label={regional_year} description={regional_comparison}/>
-        
-        < BlockTwo title = {
+          < BlockTwo title = {
           regional_jobs_growth
         }
         start = {
@@ -82,7 +82,8 @@ class App extends React.Component{
         label = {
             nat_avg_job_growth}/ >
         
-        <BlockThree title={regional_median_earnings} label={nat_avg_earnings}/>
+          <BlockThree title={regional_median_earnings} label={nat_avg_earnings}/>
+        </div>
         <RegionalTrends data={regional_data}/>
         
           <SimpleTable></SimpleTable>

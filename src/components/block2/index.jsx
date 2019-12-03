@@ -11,9 +11,9 @@ export default class BlockTwo extends React.Component {
   render() {
     return (
       <div className="block">
-          <h2> {this.props.title} </h2> 
+          <h2> <a className="green">{this.props.title > 0 ? `+ ${this.props.title}` : `{this.props.title}`}</a> </h2> 
           <div> % Change({this.props.start} - {this.props.end}) </div>{" "}
-          <div> Nation: {this.props.label > 0 ? '+' : '-'} {this.props.label} % </div>{" "}
+          <div> Nation: <a className="green">{this.props.label > 0 ? '+' : '-'} {this.props.label} % </a></div>{" "}
         </div>
     );
   }
