@@ -10,7 +10,7 @@ export default class BlockThree extends React.Component {
 
   render() {
     return (
-      <div className="block">
+      <div className="block3">
         <h2> $ {this.props.title} / hr </h2>
         <div> Median Hourly earnings </div>
         <div> Nation: $ {this.props.label} / hr </div>

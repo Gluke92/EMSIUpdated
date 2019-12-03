@@ -8,7 +8,7 @@ export default class Description extends React.Component {
     render(){
         return (
             <div className="description">
-                <h2> Occupation Overview </h2>{" "}
+                <h1> Occupation Overview </h1>{" "}
                 <h3> {this.props.title} in {this.props.region}  </h3>
             </div>
         );

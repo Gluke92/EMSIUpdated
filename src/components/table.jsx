@@ -41,8 +41,8 @@ export default function SimpleTable() {
           <TableRow>
             <TableCell>Industry</TableCell>
             <TableCell align="right">Occupation Jobs in Industry (2015)</TableCell>
-            <TableCell align="right">% of Occupation in Industry (2015)&nbsp;(g)</TableCell>
-            <TableCell align="right">% of Total Jobs in Industry (2015)&nbsp;(g)</TableCell>
+            <TableCell align="right">% of Occupation in Industry (2015)</TableCell>
+            <TableCell align="right">% of Total Jobs in Industry (2015)</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
