@@ -7,7 +7,8 @@ import BlockTwo from "./components/block2";
 import BlockThree from "./components/block3";
 import axios from "axios";
 import RegionalTrends from "./components/regional trends";
-import SimpleTable from "./components/table.jsx";
+import SimpleTable from "./components/table1/table.jsx";
+import KeyTable from "./components/table2/table.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -61,29 +62,33 @@ class App extends React.Component {
       <div className="App">
         <Description title={title} region={region} />
         <div className="summary"></div>
-          <h2>Occupation Summary for <a class="green">{title}</a></h2>
-          <div className="block">
-            <BlockOne
-              title={regional_jobs}
-              label={regional_year}
-              description={regional_comparison}
-            />
+        <h2>
+          Occupation Summary for <a class="green">{title}</a>
+        </h2>
+        <div className="block">
+          <BlockOne
+            title={regional_jobs}
+            label={regional_year}
+            description={regional_comparison}
+          />
 
-            <BlockTwo
-              title={regional_jobs_growth}
-              start={start_year}
-              end={end_year}
-              label={nat_avg_job_growth}
-            />
+          <BlockTwo
+            title={regional_jobs_growth}
+            start={start_year}
+            end={end_year}
+            label={nat_avg_job_growth}
+          />
 
-            <BlockThree
-              title={regional_median_earnings}
-              label={nat_avg_earnings}
-            />
-          </div>
-        <RegionalTrends data={regional_data} />
-        <SimpleTable></SimpleTable>
+          <BlockThree
+            title={regional_median_earnings}
+            label={nat_avg_earnings}
+          />
         </div>
+        <RegionalTrends data={regional_data} />
+        <KeyTable></KeyTable>
+        <p></p>
+        <SimpleTable></SimpleTable>
+      </div>
     );
   }
 }

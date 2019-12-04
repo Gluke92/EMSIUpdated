@@ -41,13 +41,14 @@ export default class RegionalTrends extends React.Component {
           { year: 2014, value: 307024 },
           { year: 2015, value: 314154 },
           { year: 2016, value: 318998 },
-          { year: 2017, value: 326205 }
+          { year: 2017, value: 326205 },
+          { year: 2018, value: 0}
         ]
       }
     ];
     return (
       <LineChart width={300} height={400} data={series}>
-        <CartesianGrid stroke="#ccc" />
+        <CartesianGrid stroke="black" />
         <XAxis dataKey="year" />
         <YAxis dataKey="value" />
         <Tooltip />
